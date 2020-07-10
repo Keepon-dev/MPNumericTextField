@@ -185,7 +185,7 @@
       }
     }
     @catch (__unused id exception) {
-      mstring = [@"" mutableCopy];
+      mstring = [string mutableCopy];
     }
     
     NSNumber *number = [MPFormatterUtils numberFromString:mstring locale:locale];
