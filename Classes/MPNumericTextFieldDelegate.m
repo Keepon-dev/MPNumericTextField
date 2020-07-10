@@ -173,6 +173,7 @@
       }
       else {
         range.location -= [oldString length] - [mstring length];
+        range.location = min(range.location, [mstring length]);
         //adding a char or deleting?
         if([string length] > 0){
           [mstring insertString:string atIndex:range.location];
